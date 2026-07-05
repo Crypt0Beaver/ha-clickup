@@ -1,4 +1,4 @@
-"""Custom types for integration_blueprint."""
+"""Custom types for ha-clickup."""
 
 from __future__ import annotations
 
@@ -9,17 +9,17 @@ if TYPE_CHECKING:
     from homeassistant.config_entries import ConfigEntry
     from homeassistant.loader import Integration
 
-    from .api import IntegrationBlueprintApiClient
+    from .api import ClickUpApiClient
     from .coordinator import BlueprintDataUpdateCoordinator
 
 
-type IntegrationBlueprintConfigEntry = ConfigEntry[IntegrationBlueprintData]
+type ClickUpConfigEntry = ConfigEntry[ClickUpData]
 
 
 @dataclass
-class IntegrationBlueprintData:
+class ClickUpData:
     """Data for the Blueprint integration."""
 
-    client: IntegrationBlueprintApiClient
+    client: ClickUpApiClient
     coordinator: BlueprintDataUpdateCoordinator
     integration: Integration

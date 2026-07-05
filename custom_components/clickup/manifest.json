@@ -1,0 +1,9 @@
+{
+  "domain": "clickup",
+  "name": "ClickUp",
+  "codeowners": ["@Crypt0Beaver"],
+  "documentation": "https://github.com/Crypt0Beaver/ha-clickup",
+  "issue_tracker": "https://github.com/Crypt0Beaver/ha-clickup/issues",
+  "iot_class": "cloud_polling",
+  "version": "0.0.1"
+}
